@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="log in.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="login">
+      <h1 class="login-header">Sign Up</h1>
+
+      <form class="login-form">
+        <div class="login-username">
+          <label class="username-label" for="username">Username</label>
+          <input
+            required
+            type="text"
+            placeholder="Enter your username.."
+            id="username"
+            class="login-name"
+          />
+        </div>
+        <div class="login-email">
+          <label for="email">Email</label>
+          <input
+            required
+            type="email"
+            placeholder="Enter your email..."
+            id="email"
+            class="login-email-input"
+          />
+        </div>
+        <div class="login-password-container">
+          <label class="password-label" for="password">Password</label>
+          <input
+            required
+            type="password"
+            placeholder="Enter your password"
+            id="password"
+            class="login-password"
+          />
+        </div>
+
+        <button class="login-btn" id="signin-btn">Sign Up</button>
+      </form>
+      <p class="account-have">
+        Have account? <a href="login_page.html">Log In</a>
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="bg.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

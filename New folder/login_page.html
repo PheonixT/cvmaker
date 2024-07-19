@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="log in.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="login">
+      <h1 class="login-header">Log In</h1>
+
+      <form class="login-form">
+        <div class="login-username">
+          <label class="username-label" for="username">Username</label>
+          <input
+            type="text"
+            placeholder="Enter your username.."
+            id="username"
+            class="login-name"
+            required
+          />
+        </div>
+        <div class="login-password-container">
+          <label class="password-label" for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="password"
+            class="login-password"
+            required
+          />
+        </div>
+
+        <p class="user-not-exist">
+          This kind of user does not exist! Please check your username and
+          password..
+        </p>
+
+        <div class="login-remember">
+          <input
+            type="checkbox"
+            class="login-remember-input"
+            id="remember-me"
+          />
+          <label for="remember-me">Remember me</label>
+        </div>
+
+        <div class="login-btns">
+          <button class="login-btn" id="login-btn">Log In</button>
+          <p class="login-btn-signup">
+            Don't have an account? <a href="Sign In.html">Sign Up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="bg.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

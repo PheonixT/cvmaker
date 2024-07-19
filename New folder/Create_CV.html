@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create CV</title>
+    <link rel="stylesheet" href="create-cv.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-items">
+          <div class="header-item1">
+            <div class="header-item1-image">
+              <img src="boy.png" alt="img" />
+            </div>
+            <h1 class="header-item1-name">Bekhruz</h1>
+          </div>
+
+          <div class="header-item2">
+            <button class="projects-btn" id="my-projects">My Projects</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main-items">
+          <form action="#" class="main-item1">
+            <div class="img-container">
+              <label for="img-url">Img Url </label>
+              <input type="url" id="img-url" />
+            </div>
+
+            <div class="firstname-container">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" />
+            </div>
+
+            <div class="lastname-container">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" />
+            </div>
+
+            <div class="job-container">
+              <label for="job">Profession</label>
+              <input type="text" id="job" />
+            </div>
+
+            <div class="date-container">
+              <label for="date">Date of Birth:</label>
+              <input type="text" name="date" id="date" />
+            </div>
+
+            <div class="text-area-container">
+              <label for="about-me">About Me</label>
+              <textarea
+                id="about-me"
+                placeholder="Enter about yourself..."
+              ></textarea>
+            </div>
+
+            <button class="save-btn" type="submit" id="save">Save</button>
+          </form>
+          <div class="main-item2">
+            <div class="main-item2-head">
+              <div class="for-img" id="ava"></div>
+              <h1 class="for-name" id="full-name">Bekhruz To'ymurodov</h1>
+            </div>
+
+            <h1 class="for-job">
+              Profession:
+              <span class="entered-profession" id="for-job"></span>
+            </h1>
+
+            <h1 class="for-date-of-birth">
+              Date of Birth:
+              <span class="entered-date" id="full-date"></span>
+            </h1>
+
+            <h1 class="for-info">
+              About Me: <span class="entered-info" id="info"> </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="bg.js"></script>
+    <script src="script.js"></script>
+    <script src="cv.js"></script>
+  </body>
+</html>
